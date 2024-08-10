@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            background: #1f242d;
+            color: aliceblue;
+        }
+        h1{
+            text-align: center;
+            font-weight: 600;
+            text-shadow: 0 0 10px #0ef;
+        }
+        p{
+            text-align: center;
+            font-size: 19px;
+        }
+        #container{
+            display: flex;
+        
+            margin-top: 50px;
+            width: 100%;
+            flex-basis: 1;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 220px;
+            width: 320px;
+            border: 2px solid #0ef;
+            box-shadow:0 0 15px #0ef;
+        
+            
+        }
+        .image1{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 1px solid rgb(119, 119, 194);
+            margin-top: 18px;
+        }
+        .box h2{
+            margin-top: 10px;
+            font-size: 21px;
+        }
+        .box p{
+            margin-top: 8px;
+            font-size: 16px;
+        }
+        #container2{
+            display: flex;
+            gap: 10px;
+            margin-top: 50px;
+            width: 100%;
+            flex-basis: 1;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .box1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 210px;
+            width: 220px;
+            border: 2px solid #0ef;
+            box-shadow:0 0 10px #0ef;
+        
+            
+        }
+        #container3{
+            display: flex;
+            
+            margin-top: 0px;
+            width: 100%;
+            flex-basis: 1;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .box2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            width: 250px;
+           /* border: 1px solid #0ef;*/
+            margin-left: 0px;
+           /* box-shadow:0 0 15px #0ef;*/
+        
+            
+        }
+        .box2 h2{
+            font-size: 18px;
+            font-weight: 400;
+        }
+        #box3{
+            background-image:url("contact.png") ;
+            background-size:cover ;
+        }
+        #box4{
+            background-image:url("landing.png") ;
+            background-size:cover ;
+        }
+        #box5{
+            background-image:url("calc.png") ;
+            background-size:contain ;
+            display: block;
+        }
+        #box6{
+            background-image:url("quiz.png") ;
+            background-size:cover ;
+        }
+        .social-media a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #0ef;
+            border-radius: 50%;
+            font-size:20px ;
+            color: #0ef;
+            text-decoration: none;
+            margin: 30px 15px 30px 0;
+            transition: 5s ease;
+            opacity: 0;
+            animation: slideLeft 1s ease forwards;
+            animation-delay: calc(.2s * var(--i));
+        }
+        @keyframes slideLeft{
+          0%{
+            transform: scale(0);
+            opacity: 0;
+          }  
+          100%{
+            transform:scale(1);
+            opacity: 1;
+          }
+        }
+        #container4{
+          display: flex; 
+          height: 650px;
+          margin-top: 60px;
+          justify-content: center;
+        }
+        .box7{
+         width: 35%;
+         text-align: center;
+         
+        }
+        .image2{
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            border:1px solid #0ef;
+            margin-left: 34%;
+            margin-top: 30px;
+            background-image: url("pic.png");
+            background-size: cover;
+        }
+        .social-media a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #0ef;
+            border-radius: 50%;
+            font-size:20px ;
+            color: #0ef;
+            text-decoration: none;
+        }
+        .box8{
+         width: 65%;
+        }
+        @media(max-width:640px){
+            h1{
+            text-align: center;
+            font-weight: 500;
+            text-shadow: 0 0 8px #0ef;
+        }
+        p{
+            text-align: center;
+            font-size: 11px;
+        }
+        #container{
+            display: flex;
+        
+            margin-top: 40px;
+            width: 100%;
+            flex-basis: 1;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 110px;
+            width: 160px;
+            border: 2px solid #0ef;
+            box-shadow:0 0 10px #0ef;
+        
+            
+        } 
+       /*.image1{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            border: 1px solid rgb(119, 119, 194);
+            margin-top: 12px;
+        }*/
+        .box h2{
+            margin-top: 8px;
+            font-size: 11px;
+        }
+        .box p{
+            margin-top: 6px;
+            font-size: 9px;
+        }
+        #container2{
+            display: flex;
+            gap: 7px;
+            margin-top: 0px;
+            width: 100%;
+            flex-basis: 1;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .box1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 105px;
+            width: 110px;
+            border: 2px solid #0ef;
+            box-shadow:0 0 10px #0ef;     
+        }
+        #container3{
+            display: flex;
+            width: 100%;
+            flex-basis: 1;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .box2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 130px;
+            margin-left: 0px;
+        }
+        .box2 h2{
+            font-size: 11px;
+            font-weight: 400;
+        }
+        .social-media a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 22px;
+            height: 22px;
+            background: transparent;
+            border: 2px solid #0ef;
+            border-radius: 50%;
+            font-size:12px ;
+            color: #0ef;
+            text-decoration: none;
+            margin: 20px 8px 20px 0;
+            transition: 5s ease;
+            opacity: 0;
+            animation: slideLeft 1s ease forwards;
+            animation-delay: calc(.2s * var(--i));
+        }
+        #container4{
+          display: flex;
+          gap: 15px; 
+          height: 350px;
+          margin-top: 30px;
+          justify-content: center;
+        }
+        .box7{
+         width: 45%;
+         text-align: center;
+         
+        }
+        .image2{
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            border:1px solid #0ef;
+            margin-left: 18%;
+            margin-top: 40px;
+            background-image: url("pic.png");
+            background-size: cover;
+        }
+        .social-media a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 25px;
+            height: 25px;
+            background: transparent;
+            border: 2px solid #0ef;
+            border-radius: 50%;
+            font-size:20px ;
+        }
+        .box8{
+         width: 55%;
+        }
+        #container4 h2{
+            font-size: 20px;
+        }
+        #container4 p{
+            font-size: 17px;
+        }
+        #firstHeading{
+            font-size: 11px;
+            text-align: center;
+        }
+        }
+        #img1{
+            background-image: url("FRONT.png");
+            background-size: cover;
+        }
+        #img2{
+            background-image: url("PROGRAMMER.png");
+            background-size: cover;
+        }
+        #img3{
+            background-image: url("DESIGNER.jpeg");
+            background-size: cover;
+        }
+        
+    </style>
+</head>
+<body>
+  <h1>SKILLS</h1>
+  <p>Continuously improving my skills and knowledging in the field</p>
+  <div id="container">
+    <div class="box">
+        <div class="image1" id="img1"></div>
+        <h2 id="firstHeading">FRONTENED DEVELOPER</h2>
+        <p>Skilled in HTML, CSS, and Javascript. Experienced in building responsive web designs and user-friendly interfaces.</p>
+    </div>
+    <div class="box">
+        <div class="image1" id="img2"></div>
+        <h2>PROGRAMMER</h2>
+        <p>Skilled in C and JAVA Programming. Currently in Learning Phase.</p>
+    </div>
+    <div class="box">
+        <div class="image1" id="img3"></div>
+        <h2>DESIGNER</h2>
+        <p>Skilled in making and designing pages on figma</p>
+    </div>
+  </div>
+
+  <h1 style="margin-top: 170px;">PORTFOLIO</h1>
+  <p>A collection of projects I've worked on.</p>
+  <div id="container2">
+    <div class="box1"id=box3></div>
+    <div class="box1" id="b0x4"></div>
+    <div class="box1" id="box5"></div>
+    <div class="box1" id="box6"></div>
+  </div>
+
+  <div id="container3">
+    <div class="box2">
+        <h2>Contact-Me Page</h2>
+    </div>
+    <div class="box2">
+        <h2>Responsive Landing Page</h2>
+    </div>
+    <div class="box2">
+        <h2>Stop-Watch App</h2>
+    </div>
+    <div class="box2">
+        <h2>Quiz-App</h2>
+    </div>
+  </div>
+  
+    <h1 style="margin-top: 150px;">CURRICULLUM VITAE</h1>
+    <div id="container4">
+   <div class="box7">
+    <div class="image2"></div>
+    <h2>Gungun Singh</h2>
+    <div class="email"><i class='bx bx-envelope'></i>email@gmail.com</div>
+    <div class="phone"><i class='bx bxs-phone' ></i>2304846787</div>
+    <div class="address"><i class='bx bx-current-location'></i>Your Address</div>
+    <div class="social-media">
+        <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
+        <a href="#" style="--i:9"><i class='bx bxl-linkedin' ></i></a>
+        <a href="#" style="--i:10"><i class='bx bxl-twitter' ></i></a>
+    </div>
+    <h3>Technical Skills</h3>
+    <h4>HTML</h4>
+    <h4>CSS</h4>
+    <h4>Javascript</h4>
+   </div>
+   <div class="box8">
+    <h2>Profile</h2><hr/>
+    <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis itaque et tenetur? Ipsam alias, ducimus assumenda pariatur enim corporis fuga ea voluptatibus eaque natus amet saepe molestiae, asperiores aliquid!</p>
+   <h2>Highlights Of Qualifications</h2><hr/>
+   <ul>
+    <li>Qualification 1</li>
+    <li>Qualification 2</li>
+    <li>Qualification 3</li>
+   </ul>
+   <h2>Education</h2><hr/>
+   <p style="text-align: left; font-weight: bold;">Year-Year</p>
+   <p style="text-align: left;">University/Institution</p>
+   <p  style="text-align: left;">Degree/Program</p>
+   <h2>Additional Courses</h2><hr/>
+   <p style="text-align: left; font-weight: bold;">Year</p>
+   <p  style="text-align: left;">Course</p>
+   <p  style="text-align: left;">Institution/Organization</p>
+</div>
+  </div>
+</body>
+</html>
